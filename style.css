@@ -86,6 +86,7 @@ body{
     border-radius: 1.5rem;
     overflow: hidden;
     box-shadow: 17px 53px 25px -5px hsl(var(--clr-neutral-blue-hsl),1);
+    margin-top: 5rem;
 
 }
 
