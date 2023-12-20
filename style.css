@@ -105,7 +105,7 @@ body{
 .result{
     color: hsl(var(--clr-neutral-white-hsl),0.7);
     background:var(--clr-gradient-primary);
-    padding: var(--padding) calc(var(--padding) *1.5);
+    padding: calc(var(--padding) *1.2) calc(var(--padding) *1.5);
     border-radius: 35px;   
     
 }
@@ -144,7 +144,7 @@ body{
 
 .summary{
     background-color: var(--clr-neutral-white);
-    padding: var(--padding) calc(var(--padding) *1.5);
+    padding: calc(var(--padding) *1.2) calc(var(--padding) *1.5);
 }
 
 .summary_info{
@@ -192,12 +192,22 @@ body{
     color: var(--clr-neutral-white);
     background-color: var(--clr-neutral-Dark-gray-blue);
 }
+.summary>button:hover {
+    background:var(--clr-gradient-primary);
+}
 
 @media only screen and (max-width:800px) {
     .wrapper{
         grid-template-columns: 1fr;
         min-height: 100vh;
-        margin-top: 5rem;
+        overflow: unset;
+    }
+    .result{
+        border-radius: 0 0 35px 35px;
+        padding: calc(var(--padding) *1.5) calc(var(--padding) *1.5);
+    }
+    .summary{
+        padding: calc(var(--padding) *1.5) calc(var(--padding) *1.5);
     }
        
 }
